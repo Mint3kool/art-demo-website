@@ -1,14 +1,23 @@
 <html>
   <head>
     <title>An error has occured</title>
+
     <link
-      href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
       rel="stylesheet"
-      id="bootstrap-css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
     />
+
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/error.css" />
   </head>
   <body>
+    <header>
+      <div class="jumbotron d-none d-sm-block"></div>
+      <%- include('../views/layout/partials/navigation') %>
+    </header>
+
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -33,5 +42,9 @@
         </div>
       </div>
     </div>
+    <footer>
+      <%- include('../views/extras/Markus-credit') %>
+    </footer>
+    <%- include('../views/layout/partials/scripts') %>
   </body>
 </html>
